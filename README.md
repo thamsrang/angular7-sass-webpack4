@@ -1,1 +1,1 @@
-# angular-user-profile
+# angular-webpack-sass
