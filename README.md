@@ -1,1 +1,1 @@
-# angular-webpack-sass
+# angular-sass-webpack
