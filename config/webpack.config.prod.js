@@ -17,10 +17,10 @@ module.exports = webpackMerge(commonConfig, {
     mode: 'production',
 
     output: {
-        path: helpers.root('dist'),
-        publicPath: '/',
-        filename: '[hash].js',
-        chunkFilename: '[id].[hash].chunk.js'
+        path: helpers.root('dist', 'angular7-sass-webpack4'),
+        publicPath: '/angular7-sass-webpack4/',
+        filename: 'js/[hash].js',
+        chunkFilename: 'js/[id].[hash].chunk.js'
     },
 
     optimization: {
