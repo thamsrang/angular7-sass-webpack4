@@ -9,3 +9,9 @@ Reference:
 - https://medium.com/ag-grid/webpack-tutorial-understanding-ngtools-webpack-306dd7f9e07d
 - https://help.syncfusion.com/angular/gettingstarted/getting-started-with-webpack-aot
 - https://github.com/kylecannon/entrymodule-aot-repro
+
+### Lazy Loading
+- https://codeburst.io/lazy-loading-external-javascript-libraries-in-angular-3d86ada54ec7
+- https://dev.to/brsjsk/lazy-loading-modules-with-webpack-4emg
+- https://medium.com/front-end-weekly/webpack-and-dynamic-imports-doing-it-right-72549ff49234
+- https://hackernoon.com/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758

@@ -1,23 +1,23 @@
 'use strict';
 
-const webpackMerge            = require('webpack-merge');
-const ngw                     = require('@ngtools/webpack');
-const UglifyJsPlugin          = require('uglifyjs-webpack-plugin');
+const webpackMerge = require('webpack-merge');
+const ngw = require('@ngtools/webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const cssnano                 = require('cssnano');
+const cssnano = require('cssnano');
 
-const commonConfig            = require('./webpack.config.common');
+const commonConfig = require('./webpack.config.common');
 
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 
-const helpers                 = require('./helpers');
-const filemanager                 = require('./filemanager');
+const helpers = require('./helpers');
+const filemanager = require('./filemanager');
 
 module.exports = webpackMerge(commonConfig, {
     mode: 'production',
 
     output: {
-        path: helpers.root('dist', 'angular7-sass-webpack4'),
+        path: helpers.root('docs'),
         publicPath: '/angular7-sass-webpack4/',
         filename: 'js/[hash].js',
         chunkFilename: 'js/[id].[hash].chunk.js'
@@ -48,12 +48,10 @@ module.exports = webpackMerge(commonConfig, {
     },
 
     module: {
-        rules: [
-            {
-                test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
-                loader: '@ngtools/webpack'
-            }
-        ]
+        rules: [{
+            test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
+            loader: '@ngtools/webpack'
+        }]
     },
 
     plugins: [

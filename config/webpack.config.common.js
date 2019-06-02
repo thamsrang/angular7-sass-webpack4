@@ -12,7 +12,7 @@ module.exports = {
         vendor: './src/vendor.ts',
         polyfills: './src/polyfills.ts',
         main: isDev ? './src/main.ts' : './src/main.aot.ts',
-        light_theme: './src/assets/styles.scss'
+        light_theme: './src/assets/include.scss'
     },
 
     resolve: {
@@ -49,7 +49,7 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(
-            helpers.root('dist'), { root: helpers.root(), verbose: true }),
+            helpers.root('docs'), { root: helpers.root(), verbose: true }),
 
         new HtmlWebpackPlugin({
             template: 'src/index.html',
